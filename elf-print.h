@@ -25,10 +25,14 @@
 
 #include <gelf.h>
 
-Elf_Scn* find_section(Elf *elf, const char* scname);
-int  print_section (Elf *elf, Elf_Scn *scn);
-void print_header  (Elf *elf);
-Elf_Scn* add_section(Elf *elf, char* section);
-void create_section(Elf *elf);
+//Elf_Scn* find_section(Elf *elf, const char* scname);
+//int  print_section (Elf *elf, Elf_Scn *scn);
+//void print_header  (Elf *elf);
+//Elf_Scn* add_section(Elf *elf, char* section);
+//void create_section(Elf *elf);
+
+int show_section(const char* elfname, const char* section);
+int set_section_file(const char* elfname, const char* section, const char* secfile);
+int set_section_string(const char* elfname, const char* section, const char* str);
 
 #endif /* __SCN_DUMP_H__ */
